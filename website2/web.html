@@ -1,0 +1,2737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WoodMart - Multipurpose WooCommerce Theme WordPress</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="web.css">
+
+</head>
+
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="top-bar">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+
+        <!-- LEFT -->
+        <div class="col-md-6 d-flex h-100">
+
+          <div class="top-item top-border dropdown">
+            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              ENGLISH
+            </a>
+            <ul class="dropdown-menu dropdown-custom">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+              <li><a class="dropdown-item" href="#">French</a></li>
+            </ul>
+          </div>
+
+          <div class="top-item top-border dropdown">
+            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              COUNTRY
+            </a>
+            <ul class="dropdown-menu dropdown-custom">
+              <li><a class="dropdown-item" href="#">USA</a></li>
+              <li><a class="dropdown-item" href="#">UK</a></li>
+              <li><a class="dropdown-item" href="#">Egypt</a></li>
+            </ul>
+          </div>
+          <div class="top-item top-border dropdown">
+            <div class="align-items-center fw-semibold">
+              FREE SHIPPING FOR ALL ORDERS OF $150
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- RIGHT -->
+        <div class="col-md-6 d-flex justify-content-end h-100">
+
+          <div class="top-item top-border icon-group">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+
+          <div class="top-item top-border">
+            <a href="#"><i class="bi bi-envelope me-2"></i>NEWSLETTER</a>
+          </div>
+
+          <div class="top-item top-border">
+            <a href="#">CONTACT US</a>
+          </div>
+
+          <div class="top-item top-border">
+            <a href="#">FAQS</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+    <div class="container position-relative">
+
+      <!-- TOGGLER (LEFT) -->
+     <div class="mobile-left d-lg-none">
+  <button class="navbar-toggler" type="button"
+    data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+</div>
+
+
+      <!-- BRAND (CENTER ALWAYS) -->
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="https://woodmart.xtemos.com/wp-content/uploads/2025/05/wood-logo-dark-upload.svg" alt="Woodmart"
+          style="max-height:45px;">
+      </a>
+
+      <!-- COLLAPSIBLE CONTENT -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+
+        <div class="row w-100 align-items-center mt-4 mt-lg-0">
+
+          <!-- SEARCH -->
+          <div class="col-lg-6 col-md-12 mx-auto mb-lg-0">
+            <form>
+              <div class="input-group wood-search">
+
+                <input type="text" class="form-control" placeholder="Search for products">
+
+                <button class="btn dropdown-toggle category-btn" type="button" data-bs-toggle="dropdown">
+                  SELECT CATEGORY
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Furniture</a></li>
+                  <li><a class="dropdown-item" href="#">Decor</a></li>
+                  <li><a class="dropdown-item" href="#">Lighting</a></li>
+                </ul>
+
+                <button class="btn search-btn" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+
+              </div>
+            </form>
+          </div>
+
+          <!-- RIGHT ACTIONS -->
+          <div class="col-lg-6 col-md-12">
+            <div class="d-flex flex-column flex-lg-row
+                      justify-content-lg-end align-items-lg-center
+                      gap-3 gap-lg-4 nav-actions">
+
+              <a href="#" class="fw-semibold nav-action text-decoration-none">
+                LOGIN / REGISTER
+              </a>
+
+              <a href="#" class="nav-action">
+                <i class="bi bi-heart fs-5"></i>
+              </a>
+<a href="#" class="nav-action position-relative">
+  <i class="bi bi-bag fs-5"></i>
+  <span class="badge rounded-circle">0</span>
+</a>
+
+            <a href="#" class="nav-action position-relative">
+  <i class="bi bi-bag fs-5"></i>
+  <span class="badge rounded-circle">0</span>
+  
+</a>
+
+
+              <div class="fw-semibold nav-action">
+                $0.00
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="hero-section">
+    <div class="row g-0">
+
+      <!-- LEFT CATEGORIES -->
+      <div class="col-lg-3 d-none d-lg-block ">
+        <div class="categories-box h-100">
+          <div class="categories-header">
+            <i class="bi bi-list"></i> BROWSE CATEGORIES
+          </div>
+
+          <ul class="categories-list">
+  <li class="has-mega">
+<span class="cat-title">
+    <i class="bi bi-lamp"></i> Furniture
+  </span>
+    <i class="bi bi-chevron-right dropdown-arrow"></i>
+
+
+    <!-- MEGA MENU -->
+    <div class="mega-menu">
+      <div class="row">
+
+        <div class="col-md-3 ">
+          <img src="images/menu-product-1-118x118.jpg" alt="">
+          <h6>CLOCKS</h6>
+          <ul>
+            <li>Mantel Clocks</li>
+            <li>Anniversary Clocks</li>
+            <li>Wall Clocks</li>
+            <li>Digital Clocks</li>
+            <li>Travel and Alarm</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/menu-product-3-118x118.jpg" alt="">
+          <h6>TABLETOP</h6>
+          <ul>
+            <li>Pepper Shakers</li>
+            <li>Spice Jars</li>
+            <li>Dish Drainers</li>
+            <li>Cocktail Shakers</li>
+            <li>Utensil Holders</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/menu-product-3-2-118x118.jpg" alt="">
+          <h6>KITCHEN</h6>
+          <ul>
+            <li>Oil Vinegar Sets</li>
+            <li>Bottle Racks</li>
+            <li>Chopping Boards</li>
+            <li>Vacuum Flasks</li>
+            <li>Utensil Holders</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/menu-product-5-2-118x118.jpg" alt="">
+          <h6>LIGHTING</h6>
+          <ul>
+            <li>Interior Lighting</li>
+            <li>Ceiling Lamps</li>
+            <li>Wall Lamps</li>
+            <li>Floor Lamps</li>
+            <li>Ceiling Lamps</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="bottom-bar">
+      <div class="row ">
+        
+          <div class="col-md-3">
+          <img src="images/klobe2r.png" alt="">
+          
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/brand-PackIt.png" alt="">
+          
+        </div>
+
+        <div class="col-md-3">
+            <img src="images/brand-Rosenthal.png" alt="">
+         
+        </div>
+
+        <div class="col-md-3">
+          <img src="images/brand-witra.png" alt="">
+         
+        </div>
+        </div>
+        
+
+      </div>
+   
+  </li>      
+
+            <li><i class="bi bi-egg-fried"></i> Cooking</li>
+            <li><i class="bi bi-bag"></i> Accessories</li>
+
+
+           <li class="has-mega2">
+  <span class="cat-title">
+    <i class="bi bi-clock"></i> Fashion
+  </span>
+  <i class="bi bi-chevron-right dropdown-arrow"></i>
+
+  <!-- MEGA MENU -->
+  <div class="mega-menu2">
+    <div class="row">
+
+      <div class="col-md-4 my-5">
+  <div class="shirt">
+    <img src="https://woodmart.xtemos.com/wp-content/uploads/2025/05/wd-shirt.svg"
+         title="wd-shirt" width="50" height="50">
+    <ul>
+      <li class="title">Man</li>
+      <li>Mantel Clocks</li>
+      <li>Anniversary Clocks</li>
+      <li>Wall Clocks</li>
+    </ul>
+  </div>
+ <div class="shirt mt-5">
+    <img src="https://woodmart.xtemos.com/wp-content/uploads/2025/05/wd-shirt.svg"
+         title="wd-shirt" width="50" height="50">
+    <ul>
+      <li class="title">Man</li>
+      <li>Mantel Clocks</li>
+      <li>Anniversary Clocks</li>
+      <li>Wall Clocks</li>
+    </ul>
+  </div>
+
+  <div class="shirt mt-5">
+    <img src="https://woodmart.xtemos.com/wp-content/uploads/2025/05/wd-shirt.svg"
+         title="wd-shirt" width="50" height="50">
+    <ul>
+      <li class="title">Man</li>
+      <li>Mantel Clocks</li>
+      <li>Anniversary Clocks</li>
+      <li>Wall Clocks</li>
+    </ul>
+  </div>
+
+ 
+  
+</div>
+
+  
+          <div class="col-md-4 my-5">
+  <div class="shirt">
+    <img src="https://woodmart.xtemos.com/wp-content/uploads/2025/05/wd-shirt.svg"
+         title="wd-shirt" width="50" height="50">
+    <ul>
+      <li class="title">Man</li>
+      <li>Mantel Clocks</li>
+      <li>Anniversary Clocks</li>
+      <li>Wall Clocks</li>
+    </ul>
+  </div>
+ <div class="shirt mt-5">
+    <img src="https://woodmart.xtemos.com/wp-content/uploads/2025/05/wd-shirt.svg"
+         title="wd-shirt" width="50" height="50">
+    <ul>
+      <li class="title">Man</li>
+      <li>Mantel Clocks</li>
+      <li>Anniversary Clocks</li>
+      <li>Wall Clocks</li>
+    </ul>
+  </div>
+
+  <div class="shirt mt-5">
+    <img src="https://woodmart.xtemos.com/wp-content/uploads/2025/05/wd-shirt.svg"
+         title="wd-shirt" width="50" height="50">
+    <ul>
+      <li class="title">Man</li>
+      <li>Mantel Clocks</li>
+      <li>Anniversary Clocks</li>
+      <li>Wall Clocks</li>
+    </ul>
+  </div>
+
+ 
+  
+</div>
+
+     <div class="col-md-4">
+  <div class="banner-card">
+<img src="images/banner-half-menu-4-1.png" alt="" class="banner-img">
+    <div class="banner-content">
+      <h4>MAN’S CASUAL COLLECTION</h4>
+      <a href="#" class="btn btn-color-black btn-style-default btn-shape-rectangle btn-size-small  shop">SHOP NOW</a>
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
+  </div>
+</li>
+
+           
+            <li><i class="bi bi-clock"></i> Clocks</li>
+            <li><i class="bi bi-lightbulb"></i> Lighting</li>
+            <li><i class="bi bi-controller"></i> Toys</li>
+            <li><i class="bi bi-heart"></i> Hand Made</li>
+            <li><i class="bi bi-box"></i> Minimalism</li>
+            <li><i class="bi bi-cpu"></i> Electronics</li>
+            <li><i class="bi bi-car-front"></i> Cars</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="col-lg-9 d-flex flex-column">
+
+        <!-- TOP NAV -->
+       <div class="row align-items-center hero-top-nav">
+
+  <!-- MENU (LEFT) -->
+  <div class="col-lg-8 d-lg-flex align-items-center">
+    <ul class="main-menu3">
+      <li class="active">HOME</li>   
+
+      <li>SHOP</li>
+      <li>BLOG</li>
+<li class="has-arrow pages-item">
+    PAGES
+    <i class="bi bi-chevron-down arrow"></i>
+
+    <!-- Mega Menu -->
+    <div class="mega-menu3">
+      <div class="mega-container">
+
+        <div class="mega-col">
+          <h4>DEMO LAYOUTS <span class="badge hot">HOT</span></h4>
+          <ul>
+            <li>Categories</li>
+            <li>Basic</li>
+            <li>Parallax</li>
+            <li>Infinite Scrolling</li>
+            <li>Boxed</li>
+            <li>Grid</li>
+            <li>Video</li>
+            <li>Fullscreen</li>
+            <li>Lookbook</li>
+            <li>Landing</li>
+          </ul>
+        </div>
+
+        <div class="mega-col">
+          <h4>PRE-BUILT PAGES</h4>
+          <ul>
+            <li>Contact Us #1</li>
+            <li>Contact Us #2</li>
+            <li>Contact Us #3</li>
+            <li>Contact Us #4</li>
+            <li>FAQs #1</li>
+            <li>FAQs #2</li>
+            <li>Our team</li>
+            <li>About Us #1</li>
+            <li>About Us #2</li>
+            <li>About Me</li>
+          </ul>
+        </div>
+
+        <div class="mega-col">
+          <h4>PORTFOLIO <span class="badge projects">PROJECTS</span></h4>
+          <ul>
+            <li>Standard</li>
+            <li>Alternative</li>
+            <li>Text under image</li>
+            <li>Hover parallax</li>
+            <li>Portfolio fullwidth</li>
+            <li>Infinite scrolling</li>
+            <li>Single - sticky</li>
+            <li>Single - alternative</li>
+            <li>Single - gallery</li>
+            <li>Single - video</li>
+          </ul>
+        </div>
+
+        <div class="mega-col">
+          <h4>HEADERS</h4>
+          <ul>
+            <li>Advanced</li>
+            <li>E-Commerce</li>
+            <li>Header base</li>
+            <li>Simplified</li>
+            <li>Double menu</li>
+            <li>Logo center</li>
+            <li>With categories menu</li>
+            <li>Menu in top bar</li>
+            <li>Dark header</li>
+            <li>Colored header</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </li>
+      <li>ELEMENTS</li>
+      <li>BUY</li>
+    </ul>
+  </div>
+
+  <!-- ACTIONS (RIGHT) -->
+  <div class="col-lg-4 d-none d-lg-flex justify-content-end align-items-center gap-3">
+    <a href="#" class="special-offer">SPECIAL OFFER</a>
+    <a href="#" class="purchase-theme">PURCHASE THEME</a>
+  </div>
+
+        </div>
+
+
+        <!-- HERO CONTENT -->
+      <!-- HERO CONTENT -->
+<div class="hero-content flex-grow-1">
+  <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="false">
+    
+    <!-- Indicators / Dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner h-100 d-flex align-items-center">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="hero-title">Eames – <br> Side Chair.</h1>
+            <div class="color-dots my-3">
+              <span class="dot green"></span>
+              <span class="dot red"></span>
+              <span class="dot orange"></span>
+            </div>
+            <p class="hero-desc">
+              Semper vulputate aliquam curae condimentum
+              quisque gravida fusce convallis arcu cum at.
+            </p>
+            <h3 class="hero-price">Only $99.00</h3>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/slider-main-demo-1.png" class="img-fluid hero-image" alt="Chair">
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+     <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="hero-title">Eames – <br> Side Chair.</h1>
+            <div class="color-dots my-3">
+              <span class="dot green"></span>
+              <span class="dot red"></span>
+              <span class="dot orange"></span>
+            </div>
+            <p class="hero-desc">
+              Semper vulputate aliquam curae condimentum
+              quisque gravida fusce convallis arcu cum at.
+            </p>
+            <h3 class="hero-price">Only $99.00</h3>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/slider-main-demo-2-light-opt-removebg-preview.png" class="img-fluid hero-image" alt="Chair">
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+     <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="hero-title">Eames – <br> Side Chair.</h1>
+            <div class="color-dots my-3">
+              <span class="dot green"></span>
+              <span class="dot red"></span>
+              <span class="dot orange"></span>
+            </div>
+            <p class="hero-desc">
+              Semper vulputate aliquam curae condimentum
+              quisque gravida fusce convallis arcu cum at.
+            </p>
+            <h3 class="hero-price">Only $99.00</h3>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/slider-main-demo-3-light-opt-removebg-preview.png" class="img-fluid hero-image" alt="Chair">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional arrows -->
+   <button class="carousel-control-prev d-none d-md-block d-lg-block" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next d-none d-none d-md-block d-lg-block" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+
+
+  </div>
+</div>
+
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <div class="sec3 container">
+
+
+
+    <div class="featured my-5">
+      <div class="text">
+        <p class="text-center fw-light">WOODMART COLLECTIONS</p>
+        <h3 class="text-center">FEATURED CATEGORIES</h3>
+        <p class="text-center fw-light">WoodMart is a powerful eCommerce theme for WordPress.</p>
+      </div>
+      <div class="row g-3">
+
+        <!-- LEFT BIG IMAGE -->
+        <div class="col-lg-6">
+          <div class="category-box h-100 big">
+            <img src="images/dock-black-walnut-ip6-grid-A4_7.jpg" class="img-fluid" alt="">
+            <div class="category-hover">
+              <h5>FURNITURE</h5>
+              <span>33 products</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT GRID -->
+        <div class="col-lg-6">
+          <div class="row g-3 h-100">
+
+            <div class="col-6">
+              <div class="category-box h-100">
+                <img src="images/product-furniture-14.jpg" class="img-fluid" alt="">
+                <div class="category-hover">
+                  <h5>FURNITURE</h5>
+                  <span>33 products</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="category-box h-100">
+                <img src="images/product-accessories-10.jpg" class="img-fluid" alt="">
+                <div class="category-hover">
+                  <h5>ACCESSORIES</h5>
+                  <span>21 products</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="category-box h-100">
+                <img src="images/product-furniture-14.jpg" class="img-fluid" alt="">
+                <div class="category-hover">
+                  <h5>LIGHTING</h5>
+                  <span>18 products</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="category-box h-100">
+                <img src="images/product-furniture-11.jpg" class="img-fluid" alt="">
+                <div class="category-hover">
+                  <h5>TOYS</h5>
+                  <span>12 products</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="false" data-bs-wrap="false">
+      <div class="text">
+        <p class="text-center fw-light">WOODMART COLLECTIONS</p>
+        <h3 class="text-center">FEATURED PRODUCTS</h3>
+        <p class="text-center fw-light">Visit our shop to see amazing creations from our designers.
+        </p>
+      </div>
+      <div class=" my-4">
+        <ul class="d-flex justify-content-center product-tabs">
+          <li class="active">BEST SELLERS</li>
+          <li>FEATURED</li>
+          <li>SALES</li>
+        </ul>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="products my-5">
+
+
+            <div class=" row  mx-auto ">
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sale-badge">SALE</span>
+                    <img src="images/dock-black-walnut-ip6-grid-A4_7.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="new-badge">New</span>
+                    <img src="images/product-accessories-10.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/2.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sold-out-badge">sold out</span>
+                    <img src="images/product-accessories-8.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images\product-furniture-19-3.jpg"" class=" img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <div class="color-dots">
+                          <span class="dot active" data-img="images\product-furniture-19-3.jpg"></span>
+                          <span class="dot black" data-img="images\product-furniture-19.jpg"></span>
+                        </div>
+                        <i class="bi bi-shuffle "></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sale-badge">SALE</span>
+                    <img src="images/product-furniture-11.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/dock-black-walnut-ip6-grid-A4_7.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-2">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sale-badge">SALE</span>
+                    <img src="images/product-furniture-14.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-8.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-2">
+                <div class="content">
+                  <div class="discount">
+                    <img src="images/product-furniture-19-3.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/dock-black-walnut-ip6-grid-A4_7.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-2">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sale-badge">SALE</span>
+                    <span class="hot-badge">Hot</span>
+                    <img src="images/product-furniture-4-2.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-2">
+                <div class="content">
+                  <div class="discount">
+                    <img src="images/product-furniture-8.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-furniture-14.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="products my-5">
+
+            <div class="row  mx-auto">
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sale-badge">SALE</span>
+                    <img src="images/dock-black-walnut-ip6-grid-A4_7.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sold-out-badge">New</span>
+                    <img src="images/product-accessories-10.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sale-badge">SALE</span>
+                    <img src="images/product-accessories-8.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sale-badge">SALE</span>
+                    <img src="images/product-furniture-11.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sale-badge">SALE</span>
+                    <img src="images/product-furniture-14.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <img src="images/product-furniture-19-3.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <span class="sale-badge">SALE</span>
+                    <span class="hot-badge">Hot</span>
+                    <img src="images/product-furniture-4-2.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-3 my-5">
+                <div class="content">
+                  <div class="discount">
+                    <img src="images/product-furniture-8.jpg" class="img-fluid" alt="">
+                  </div>
+
+
+
+
+
+                  <div class="overlay">
+                    <div class="product-card">
+                      <span class="sale-badge">SALE</span>
+
+                      <img src="images/product-accessories-10.jpg" class="img-fluid product-img" alt="">
+                      <div class="product-top-bar">
+                        <i class="bi bi-shuffle"></i>
+                      </div>
+
+                      <div class="product-body text-center">
+                        <h5>Wooden single drawer</h5>
+                        <span class="category">Furniture</span>
+
+                        <div class="price">
+                          <span class="new">$249.00</span>
+                          <span class="old">$399.00</span>
+                        </div>
+
+                        <p>
+                          Placerat tempor dolor eu leo ullamcorper et magnis habitant
+                          ultrices consectetur arcu nulla mattis fermentum adipiscing a
+                        </p>
+
+                        <div class="product-actions">
+                          <i class="bi bi-heart"></i>
+
+                          <div class="btn-wrapper">
+                            <button class="btn btn-green">VIEW PRODUCTS</button>
+                            <div class="btn-overlay">
+                              <i class="bi bi-cart-dash"></i>
+                            </div>
+                          </div>
+
+                          <i class="bi bi-search"></i>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-body text-center">
+                    <h5>Wooden single drawer</h5>
+                    <span class="category">Furniture</span>
+
+                    <div class="price">
+                      <span class="new">$249.00</span>
+                      <span class="old">$399.00</span>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+  </div>
+
+
+
+  <section class="sec4 my-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="container my-5 position-relative">
+            <span class="bg-word">BestSellers</span>
+
+            <div class="row align-items-center g-4">
+              <div class="col-md-6">
+                <img src="images/chair-new-shadow-opt-4.png" class="img-fluid" alt="">
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-info text-white">
+                  <p class="text-capitalize small mb-2">product landing page</p>
+
+                  <h2 class="product-title mb-4">
+                    Woodspot –<br> Lamp by Seletti.
+                  </h2>
+
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <h5 class="meta-title">Designer:</h5>
+                      <hr class="bar">
+                      <p><em>Ghislain Magrite</em></p>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h5 class="meta-title">Materials:</h5>
+                      <hr class="bar">
+                      <p><em>Wood, Leather, Metal</em></p>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h5 class="meta-title">Client:</h5>
+                      <hr class="bar">
+                      <p><em>Woodmart, Basel</em></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-center mt-4 g-3">
+                    <div class="col-auto">
+                      <div class="price fw-bold fs-4">$299.00</div>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-light text-capitalize">add to cart</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="container my-5 position-relative">
+            <span class="bg-word">BestSellers</span>
+
+            <div class="row align-items-center g-4">
+              <div class="col-md-6">
+                <img src="images/slide-3-on-green-sized-opt.png" class="img-fluid" alt="">
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-info text-white">
+                  <p class="text-capitalize small mb-2">product landing page</p>
+
+                  <h2 class="product-title mb-4">
+                    Woodspot –<br> Lamp by Seletti.
+                  </h2>
+
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <h5 class="meta-title">Designer:</h5>
+                      <hr class="bar">
+                      <p><em>Ghislain Magrite</em></p>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h5 class="meta-title">Materials:</h5>
+                      <hr class="bar">
+                      <p><em>Wood, Leather, Metal</em></p>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h5 class="meta-title">Client:</h5>
+                      <hr class="bar">
+                      <p><em>Woodmart, Basel</em></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-center mt-4 g-3">
+                    <div class="col-auto">
+                      <div class="price fw-bold fs-4">$299.00</div>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-light text-capitalize">add to cart</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="container my-5 position-relative">
+            <span class="bg-word">BestSellers</span>
+
+            <div class="row align-items-center g-4">
+              <div class="col-md-6">
+                <img src="images/lamp-new-opt-2.png" class="img-fluid" alt="">
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-info text-white">
+                  <p class="text-capitalize small mb-2">product landing page</p>
+
+                  <h2 class="product-title mb-4">
+                    Woodspot –<br> Lamp by Seletti.
+                  </h2>
+
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <h5 class="meta-title">Designer:</h5>
+                      <hr class="bar">
+                      <p><em>Ghislain Magrite</em></p>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h5 class="meta-title">Materials:</h5>
+                      <hr class="bar">
+                      <p><em>Wood, Leather, Metal</em></p>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h5 class="meta-title">Client:</h5>
+                      <hr class="bar">
+                      <p><em>Woodmart, Basel</em></p>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-center mt-4 g-3">
+                    <div class="col-auto">
+                      <div class="price fw-bold fs-4">$299.00</div>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-light text-capitalize">add to cart</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </section>
+
+
+
+  <section class="sec5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-5">
+          <p class="sec5-subtitle">
+            ALL-IN-ONE ECOMMERCE SOLUTION
+          </p>
+
+          <h1 class="sec5-title my-2">
+            WoodMart – WooCommerce Theme
+          </h1>
+
+          <p class="sec5-text">
+            WoodMart WooCommerce theme for WordPress is the only thing you need to
+            create your perfect online store. Use it for any kind of website:
+            business, corporate, retail, multivendors.
+          </p>
+
+          <div class="sec5-buttons my-5">
+            <a href="#" class="btn btn-green me-3">READ MORE</a>
+            <a href="#" class="btn btn-contact ">CONTACT US</a>
+          </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="col-lg-7 text-end d-none d-lg-block">
+
+          <img src="images/Screenshot 2025-12-16 143338.png" class="img-fluid sec5-img" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="sec6 my-2">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="sec6-content text-center">
+
+          <h4 class="sec6-title">
+            JOIN OUR NEWSLETTER NOW
+          </h4>
+
+          <form class="sec6-form d-flex justify-content-center mt-4">
+            <input type="email" class="form-control sec6-input" placeholder="Your email address">
+            <!-- ms to space  -->
+            <button type="submit" class="btn sec6-btn ms-2">
+              SIGN UP
+            </button>
+          </form>
+
+          <p class="sec6-note mt-3">
+            Will be used in accordance with our
+            <a href="#">Privacy Policy</a>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="sec7 my-2">
+
+      <!-- SECTION HEADER -->
+      <div class="text mb-4">
+        <p class="text-center fw-light">FURNITURE GUIDES</p>
+        <h3 class="text-center">OUR LATEST NEWS</h3>
+        <p class="text-center fw-light">
+          Latest trends and inspiration in interior design.
+        </p>
+      </div>
+
+      <div id="newsCarousel" class="carousel slide" data-bs-ride="false" data-bs-wrap="false">
+
+
+        <!-- SLIDES -->
+        <div class="slides">
+          <div class="carousel-inner">
+
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4 my-2">
+
+                <!-- CARD -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                  <div class="news-card text-center">
+
+                    <div class="photo position-relative">
+                      <span class="date">23 JUL</span>
+                      <img src="images/sec7-1.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                    <span class="img-bar text-capitalize">
+                      Design trends, Furniture
+                    </span>
+
+                    <div class="sec7-text mt-3 px-3">
+                      <h3 class="mt-4">Seating collection inspiration by modern</h3>
+                      <div class="d-flex justify-content-around align-items-center fw-light flex-wrap">
+                        <div class="posted "> Posted by <span> <img src="images/avatar-home.jpg" alt=""></span> S.
+                          Rogers
+                        </div>
+
+                        <div class="share position-relative my-2">
+                          <i class="bi bi-share"></i>
+
+                          <div class="share-hover">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-pinterest"></i>
+                            <i class="bi bi-envelope"></i>
+                          </div>
+                        </div>
+
+                        <div class="position-relative my-2">
+                          <i class="bi bi-chat-left"></i>
+                          <span class="badge rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+
+                        </div>
+                      </div>
+                      <p class="fw-light mb-1">Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius
+                        per a augue magna hac.
+                        Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat
+                        himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo. </p>
+                      <h6 class="continue text-uppercase my-4">Continue reading</h6>
+                    </div>
+
+                  </div>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                  <div class="news-card text-center">
+
+                    <div class="photo position-relative">
+                      <span class="date">23 JUL</span>
+                      <img src="images/sec7-2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                    <span class="img-bar text-capitalize">
+                      Design trends, Furniture
+                    </span>
+                    <div class="sec7-text mt-3 px-3">
+                      <h3 class="mt-4">Seating collection inspiration by modern</h3>
+                      <div class="d-flex justify-content-around align-items-center fw-light flex-wrap">
+                        <div class="posted "> Posted by <span> <img src="images/avatar-home.jpg" alt=""></span> S.
+                          Rogers
+                        </div>
+
+                        <div class="share position-relative my-2">
+                          <i class="bi bi-share"></i>
+
+                          <div class="share-hover">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-pinterest"></i>
+                            <i class="bi bi-envelope"></i>
+                          </div>
+                        </div>
+
+                        <div class="position-relative my-2">
+                          <i class="bi bi-chat-left"></i>
+                          <span class="badge rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+
+                        </div>
+                      </div>
+                      <p class="fw-light mb-1">Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius
+                        per a augue magna hac.
+                        Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat
+                        himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo. </p>
+                      <h6 class="continue text-uppercase my-4">Continue reading</h6>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                  <div class="news-card text-center">
+
+                    <div class="photo position-relative">
+                      <span class="date">23 JUL</span>
+                      <img src="images/sec7-1.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                    <span class="img-bar text-capitalize">
+                      Design trends, Furniture
+                    </span>
+                    <div class="sec7-text mt-3 px-3">
+                      <h3 class="mt-4">Seating collection inspiration by modern</h3>
+                      <div class="d-flex justify-content-around align-items-center fw-light flex-wrap">
+                        <div class="posted "> Posted by <span> <img src="images/avatar-home.jpg" alt=""></span> S.
+                          Rogers
+                        </div>
+
+                        <div class="share position-relative my-2">
+                          <i class="bi bi-share"></i>
+
+                          <div class="share-hover">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-pinterest"></i>
+                            <i class="bi bi-envelope"></i>
+                          </div>
+                        </div>
+
+                        <div class="position-relative my-2">
+                          <i class="bi bi-chat-left"></i>
+                          <span class="badge rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+
+                        </div>
+                      </div>
+                      <p class="fw-light mb-1">Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius
+                        per a augue magna hac.
+                        Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat
+                        himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo. </p>
+                      <h6 class="continue text-uppercase my-4">Continue reading</h6>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+              <div class="row g-4 my-2">
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                  <div class="news-card text-center">
+
+                    <div class="photo position-relative">
+                      <span class="date">23 JUL</span>
+                      <img src="images/sec7-2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                    <span class="img-bar text-capitalize">
+                      Design trends, Furniture
+                    </span>
+                    <div class="sec7-text mt-3 px-3">
+                      <h3 class="mt-4">Seating collection inspiration by modern</h3>
+                      <div class="d-flex justify-content-around align-items-center fw-light flex-wrap">
+                        <div class="posted "> Posted by <span> <img src="images/avatar-home.jpg" alt=""></span> S.
+                          Rogers
+                        </div>
+
+                        <div class="share position-relative my-2">
+                          <i class="bi bi-share"></i>
+
+                          <div class="share-hover">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-pinterest"></i>
+                            <i class="bi bi-envelope"></i>
+                          </div>
+                        </div>
+
+                        <div class="position-relative my-2">
+                          <i class="bi bi-chat-left"></i>
+                          <span class="badge rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+
+                        </div>
+                      </div>
+                      <p class="fw-light mb-1">Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius
+                        per a augue magna hac.
+                        Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat
+                        himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo. </p>
+                      <h6 class="continue text-uppercase my-4">Continue reading</h6>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                  <div class="news-card text-center">
+
+                    <div class="photo position-relative">
+                      <span class="date">23 JUL</span>
+                      <img src="images/sec7-2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                    <span class="img-bar text-capitalize">
+                      Design trends, Furniture
+                    </span>
+                    <div class="sec7-text mt-3 px-3">
+                      <h3 class="mt-4">Seating collection inspiration by modern</h3>
+                      <div class="d-flex justify-content-around align-items-center fw-light flex-wrap">
+                        <div class="posted "> Posted by <span> <img src="images/avatar-home.jpg" alt=""></span> S.
+                          Rogers
+                        </div>
+
+                        <div class="share position-relative my-2">
+                          <i class="bi bi-share"></i>
+
+                          <div class="share-hover">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-pinterest"></i>
+                            <i class="bi bi-envelope"></i>
+                          </div>
+                        </div>
+
+                        <div class="position-relative my-2">
+                          <i class="bi bi-chat-left"></i>
+                          <span class="badge rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+
+                        </div>
+                      </div>
+                      <p class="fw-light mb-1">Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius
+                        per a augue magna hac.
+                        Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat
+                        himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo. </p>
+                      <h6 class="continue text-uppercase my-4">Continue reading</h6>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+                  <div class="news-card text-center">
+
+                    <div class="photo position-relative">
+                      <span class="date">23 JUL</span>
+                      <img src="images/sec7-2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                    <span class="img-bar text-capitalize">
+                      Design trends, Furniture
+                    </span>
+                    <div class="sec7-text mt-3 px-3">
+                      <h3 class="mt-4">Seating collection inspiration by modern</h3>
+                      <div class="d-flex justify-content-around align-items-center fw-light flex-wrap">
+                        <div class="posted "> Posted by <span> <img src="images/avatar-home.jpg" alt=""></span> S.
+                          Rogers
+                        </div>
+
+                        <div class="share position-relative my-2">
+                          <i class="bi bi-share"></i>
+
+                          <div class="share-hover">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-pinterest"></i>
+                            <i class="bi bi-envelope"></i>
+                          </div>
+                        </div>
+
+                        <div class="position-relative my-2">
+                          <i class="bi bi-chat-left"></i>
+                          <span class="badge rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+
+                        </div>
+                      </div>
+                      <p class="fw-light mb-1">Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius
+                        per a augue magna hac.
+                        Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat
+                        himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo. </p>
+                      <h6 class="continue text-uppercase my-4">Continue reading</h6>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CONTROLS -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+
+
+
+
+    </section>
+
+    <section class="sec8 my-5">
+
+      <div id="brandCarousel" class="carousel slide" data-bs-ride="false" data-bs-wrap="false">
+
+        <div class="carousel-inner">
+
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active">
+            <div class="row g-3 justify-content-center">
+
+              <div class="col-6 col-md-3 col-lg-2">
+                <img src="images/brand-witra.png" alt="">
+              </div>
+
+              <div class="col-6 col-md-3 col-lg-2">
+                <img src="images/nichemodern.png" alt="">
+              </div>
+
+              <div class="col-6 col-md-3 col-lg-2">
+                <img src="images/brand-Joseph-Joseph.png" alt="">
+              </div>
+
+              <div class="col-6 col-md-3 col-lg-2">
+                <img src="images/brand-Louis-Poulsen.png" alt="">
+              </div>
+
+              <div class="col-6 col-md-3 col-lg-2">
+                <img src="images/brand-Magisso.png" alt="">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- SLIDE 2 -->
+          <div class="carousel-item">
+            <div class="row g-3 justify-content-center">
+
+              <div class="col-6 col-md-3 col-lg-2">
+                <img src="images/brand-PackIt.png" alt="">
+              </div>
+
+              <div class="col-6 col-md-3 col-lg-2">
+                <img src="images/brand-Rosenthal.png" alt="">
+              </div>
+
+              <div class="col-6 col-md-3 col-lg-2">
+                <img src="images/brand-witra.png" alt="">
+              </div>
+
+              <div class="col-6 col-md-3 col-lg-2">
+                <img src="images/klobe2r.png" alt="">
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CONTROLS -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+  </div>
+
+
+  <section class="sec9 my-2">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- LEFT TEXT (col-3) -->
+        <div class="col-md-3 mb-4 mb-md-0 text-center ">
+          <p class=" fw-light">PREBUILT LAYOUTS</p>
+          <h3>WOODMART DEMOS</h3>
+          <p class="fw-light">High-quality demos and layouts. </p>
+          <a class="view text-uppercase">View All</a>
+        </div>
+
+        <!-- RIGHT CAROUSEL (col-9) -->
+        <div class="col-md-9">
+          <div id="brandCarousel2" class="carousel slide" data-bs-ride="false" data-bs-wrap="false">
+
+            <div class="carousel-inner my-4">
+
+              <!-- SLIDE 1 -->
+              <div class="carousel-item active">
+                <div class="row g-3 text-center">
+
+                  <div class="col-6 col-md-3">
+                    <img src="images/sec9/demo-layouts-accessories.jpg" class="img-fluid brand-img" alt="">
+                  </div>
+
+                  <div class="col-6 col-md-3">
+                    <img src="images/sec9/demo-layouts-furniture-2.jpg" class="img-fluid brand-img" alt="">
+                  </div>
+
+                  <div class="col-6 col-md-3">
+                    <img src="images/sec9/demo-layouts-games-white.jpg" class="img-fluid brand-img" alt="">
+                  </div>
+
+                  <div class="col-6 col-md-3">
+                    <img src="images/sec9/demo-layouts-mega-electronics.jpg" class="img-fluid brand-img" alt="">
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="carousel-item">
+                <div class="row g-3 text-center">
+
+                  <div class="col-6 col-md-3">
+                    <img src="images/sec9/demo-layouts-megamarket.jpg" class="img-fluid brand-img" alt="">
+                  </div>
+
+                  <div class="col-6 col-md-3">
+                    <img src="images/sec9/demo-layouts-organic-farm.jpg" class="img-fluid brand-img" alt="">
+                  </div>
+
+                  <div class="col-6 col-md-3">
+                    <img src="images/sec9/demo-layouts-pottery.jpg" class="img-fluid brand-img" alt="">
+                  </div>
+
+                  <div class="col-6 col-md-3">
+                    <img src="images/sec9/demo-layouts-vegetables.jpg" class="img-fluid brand-img" alt="">
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <!-- CONTROLS -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<div class="container">
+
+<section class="footer py-5">
+  
+    <div class="row gy-4">
+
+      <!-- ABOUT / BRAND -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <img src="https://woodmart.xtemos.com/wp-content/uploads/2025/05/wood-logo-dark-upload.svg"
+             style="max-height:35px;" class="mb-3">
+
+        <p class="text-muted mb-3">
+          Condimentum adipiscing vel neque dis nam parturient orci at scelerisque.
+        </p>
+
+ <ul>
+          <li class="d-flex gap-2 mb-2">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2023/09/wd-cursor-dark.svg" width="14">
+            <span>451 Wall Street, UK, London</span>
+          </li>
+          <li class="d-flex gap-2 mb-2">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2023/09/wd-phone-dark.svg" width="14">
+            <a href="tel:(064)332-1233" class="text-decoration-none text-muted">
+              Phone: (064) 332-1233
+            </a>
+          </li>
+          <li class="d-flex gap-2">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2023/09/wd-envelope-dark.svg" width="14">
+            <span>Fax: (099) 453-1357</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RECENT POSTS -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h6 class="fw-bold mb-4">RECENT POSTS</h6>
+
+        <div class="d-flex mb-3">
+          <img src="images/blog-11.jpg" width="60" height="60" class="me-3">
+          <div>
+            <a href="#" class="fw-semibold text-dark d-block text-decoration-none">
+              A companion for extra sleeping
+            </a>
+            <small class="text-muted">July 23, 2016 · 1 Comment</small>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex">
+          <img src="images/blog-12.jpg" width="60" height="60" class="me-3">
+          <div>
+            <a href="#" class="fw-semibold text-dark d-block text-decoration-none">
+              Outdoor seating collection inspiration
+            </a>
+            <small class="text-muted">July 23, 2016 · 1 Comment</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR STORES -->
+      <div class="col-4 col-md-4 col-lg-2">
+        <h6 class="fw-bold mb-3">OUR STORES</h6>
+        <ul class="list-unstyled text-muted">
+          <li class="mb-2">New York</li>
+          <li class="mb-2">London SF</li>
+          <li class="mb-2">Edinburgh</li>
+          <li class="mb-2">Los Angeles</li>
+          <li class="mb-2">Chicago</li>
+          <li>Las Vegas</li>
+        </ul>
+      </div>
+
+      <!-- USEFUL LINKS -->
+      <div class="col-4 col-md-4 col-lg-2">
+        <h6 class="fw-bold mb-3">USEFUL LINKS</h6>
+        <ul class="list-unstyled text-muted">
+          <li class="mb-2">Privacy Policy</li>
+          <li class="mb-2">Returns</li>
+          <li class="mb-2">Terms & Conditions</li>
+          <li class="mb-2">Contact Us</li>
+          <li class="mb-2">Latest News</li>
+          <li>Our Sitemap</li>
+        </ul>
+      </div>
+
+      <!-- FOOTER MENU -->
+      <div class="col-4 col-md-4 col-lg-2">
+        <h6 class="fw-bold mb-3">FOOTER MENU</h6>
+        <ul class="list-unstyled text-muted">
+          <li class="mb-2">Instagram profile</li>
+          <li class="mb-2">New Collection</li>
+          <li class="mb-2">Woman Dress</li>
+          <li class="mb-2">Contact Us</li>
+          <li class="mb-2">Latest News</li>
+          <li class="fst-italic">Purchase Theme</li>
+        </ul>
+      </div>
+
+    </div>
+  
+</section>
+
+
+<div class="footer-bottom border-top py-3">
+
+    <div class="row align-items-center text-center text-md-start">
+
+      <!-- LEFT TEXT -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <small class="text-muted">
+          <span class="text-dark fw-semibold">WOODMART</span> © 2025 CREATED BY
+          <a href="#" class="text-decoration-none text-dark fw-semibold"><span class="x">X</span>TEMOS STUDIO</a>.
+          PREMIUM E-COMMERCE SOLUTIONS.
+        </small>
+      </div>
+
+      <!-- PAYMENT ICONS -->
+      <div class="col-md-6">
+        <div class="d-flex justify-content-center justify-content-md-end">
+                   <img src="images/payment.png"  alt="">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>
+ 
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
