@@ -170,12 +170,18 @@
     </div>
   </nav>
 <section class="hero-section">
+  <button class="btn d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesCollapse">
+      <i class="bi bi-list"></i> Categories
+    </button>
     <div class="row g-0">
 
       <!-- LEFT CATEGORIES -->
-      <div class="col-lg-3 d-none d-lg-block ">
+      <div class="col-lg-3 ">
+        
+        <div class="collapse d-lg-block" id="categoriesCollapse">
         <div class="categories-box h-100">
-          <div class="categories-header">
+        
+          <div class="categories-header d-none d-lg-block">
             <i class="bi bi-list"></i> BROWSE CATEGORIES
           </div>
 
@@ -385,7 +391,7 @@
           </ul>
         </div>
       </div>
-
+    </div>
       <!-- RIGHT SIDE -->
       <div class="col-lg-9 d-flex flex-column">
 
@@ -480,7 +486,7 @@
   </div>
 
   <!-- ACTIONS (RIGHT) -->
-  <div class="col-lg-4 d-none d-lg-flex justify-content-end align-items-center gap-3">
+  <div class="col-lg-4  d-lg-flex justify-content-end align-items-center gap-3">
     <a href="#" class="special-offer">SPECIAL OFFER</a>
     <a href="#" class="purchase-theme">PURCHASE THEME</a>
   </div>
@@ -1971,7 +1977,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item">
+        <d iv class="carousel-item">
           <div class="container my-5 position-relative">
             <span class="bg-word">BestSellers</span>
 
