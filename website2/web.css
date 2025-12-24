@@ -1455,8 +1455,8 @@ ul {
 /* Arrow icons */
 .hero-content .carousel-control-prev-icon,
 .hero-content .carousel-control-next-icon {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: #000;
   display: flex;
   justify-content: center;
@@ -1465,7 +1465,7 @@ ul {
   filter: invert(1);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50% 50%;
+  background-size: 40% 40%;
   transition: filter 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -1754,7 +1754,7 @@ ul {
 }
 
 .badge.hot {
-  top: -110%;
+  top: -120%;
   left: 50%;
   background: #e53935;
 }
@@ -1770,7 +1770,7 @@ ul {
     border-top-color: #e53935;
 }
 .badge.projects {
-   top: -110%;
+   top: -120%;
   left: 30%;
   background: #7cb342;
 }
@@ -1889,13 +1889,101 @@ margin-left: 35px;
 }
 
 
+
+/* =========================
+   TABLET (md and down)
+========================= */
+.main-menu3 {
+  justify-content: flex-start;
+}
+
+.col-lg-4 {
+  justify-content: flex-start !important;
+}
+
+@media (max-width: 1100.98px) {
+
+ .hero-content .carousel-control-prev-icon,
+.hero-content .carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  filter: invert(1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30% 30%;
+
+}
+.hero-section:hover .carousel-control-prev { left: -50%; }
+.hero-section:hover .carousel-control-next { right: -9%; }
+}
+/* =========================
+   MOBILE (sm)
+========================= */
+@media (max-width: 990.98px) {
+
+  /* القائمة عمودي */
+  .main-menu3 {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu3 li {
+  width: 100%;
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;
+    gap: 6px;                      
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mega-menu3 {
+      transform: translateX(-90%);
+
+  }
+
+  .col-lg-4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .special-offer,
+  .purchase-theme {
+    width: 90%;
+    text-align: center;
+  }
+
+
+    
+    .hero-content .carousel-control-prev-icon,
+.hero-content .carousel-control-next-icon {
+ 
+  display: none;
+  
+}}
+
+
+.hero-section .btn{
+    margin: 15px;
+}
 @media (min-width: 992px) {
     /* Show normal nav and categories for large screens */
     #categoriesCollapse,
     #topNavCollapse {
         display: block !important;
         border: none;
-        padding: 0;
-        margin: 0;
+        position: relative;
+        
     }
+
+   
 }
