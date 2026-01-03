@@ -2506,7 +2506,7 @@ color: #333333;
     font-size: 12px;
     color: #ffffff;
     transition: transform .25s ease, color .25s ease;
-    margin-left: 45px;
+    margin-left: 35px;
 }
 
 /* HERO CONTENT */
@@ -2737,7 +2737,7 @@ color: #333333;
 .mega-menu2 ul li {
   
   font-size: 12px;
-  color: #767676;
+  color: #757575;
   border: none;
   margin-left: 40px;
 }
@@ -2762,10 +2762,9 @@ color: #333333;
 
 .main-menu3 > li {
   position: relative;
-  font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
-  color: #222;
+  color: #333333;
 }
 
 
@@ -2853,7 +2852,7 @@ color: #333333;
 }
 
 .mega-col ul li {
-  font-size: 14px;
+  font-size: 12px;
   color: #777;
   padding: 6px 0;
   transition: color 0.2s ease;
